@@ -13,11 +13,15 @@ boss_coordinates = [
     {'label': '1st Boss', 'x': 960, 'y': 215, 'interval': 15},
     {'label': '2nd Boss', 'x': 960, 'y': 340, 'interval': 15},
     {'label': '3rd Boss', 'x': 960, 'y': 470, 'interval': 15},
+    {'label': '4th Boss', 'x': 960, 'y': 590, 'interval': 15},
+    {'label': '5th Boss', 'x': 960, 'y': 720, 'interval': 15},
+    {'label': '5th Boss', 'x': 960, 'y': 830, 'interval': 15},
+
     # {'label': 'Yellow Boss', 'x': 2900, 'y': 600, 'interval': 20},
     # Add more coordinates here
 ]
 
-fast_click_interval = [0.3, 0.4, 0.5]
+fast_click_interval = [0.2, 0.4, 0.6]
 
 
 def focus_window(title):
@@ -47,13 +51,13 @@ def kill_the_boss(x, y, end_interval):
     pyautogui.moveTo(minus_or_add(favorite_x), minus_or_add(favorite_y), random.choice(fast_click_interval))
     # Perform the click
     pyautogui.click()
-    time.sleep(1)
+    time.sleep(0.3)
 
     # Move the cursor to the position (x, y)
     pyautogui.moveTo(minus_or_add(x), minus_or_add(y), random.choice(fast_click_interval))
     # Perform the click
     pyautogui.click()
-    time.sleep(1)
+    time.sleep(0.3)
 
     # Move the cursor to the position (x, y)
     pyautogui.moveTo(minus_or_add(fast_travel_x), minus_or_add(fast_travel_y), random.choice(fast_click_interval))
@@ -61,7 +65,7 @@ def kill_the_boss(x, y, end_interval):
     pyautogui.click()
 
     pyautogui.moveTo(minus_or_add(200, 10, 40), minus_or_add(200, 10, 40), random.choice(fast_click_interval))
-    time.sleep(random.randint(5, 15))
+    time.sleep(random.randint(5, 7))
 
     # Type 'a'
     pyautogui.press('b')
