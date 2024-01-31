@@ -3,7 +3,7 @@ import time
 
 toggle_summon_key = 'n'
 toggle_attack_key = 'b'
-window_title = 'Mir4G[2]' # replace with the title of your window
+window_title = 'Mir4G[2]' # replace with the title of your window.
 
 counter = 0 # initialize counter
 pause_counter = 5 # number of iterations before pause
