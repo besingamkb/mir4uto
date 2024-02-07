@@ -1,6 +1,7 @@
 import pyautogui
 import time
 
+# summon key
 toggle_summon_key = 'n'
 toggle_attack_key = 'b'
 window_title = 'Mir4G[2]' # replace with the title of your window.
